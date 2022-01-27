@@ -24,7 +24,6 @@ class Settings(object):
                                             login=login,
                                             password=password,
                                             insecure=insecure)
-        self.name = name
         self.scan_id = ""
         self.scanner_id = "1"
         self.folder_id = ""
@@ -44,9 +43,6 @@ class Settings(object):
 
         if template:
             self.set_scan_template(template)
-
-        if self.scanner.scan_exists(name):
-            self.get_scan_settings(self.scanner.scan_id)
 
     def update_software(self):
         self.scanner.action(
