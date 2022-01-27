@@ -1,4 +1,4 @@
-import ness6rest as nessrest
+import nessrest
 import os
 import re
 import sys
