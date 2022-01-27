@@ -11,8 +11,7 @@ class Settings(object):
     Settings interface
     '''
 
-    def __init__(self,name,
-                      scanner=None,
+    def __init__(self, scanner=None,
                       url="",
                       login="",
                       password="",
